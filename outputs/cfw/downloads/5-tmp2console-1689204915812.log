@@ -1,0 +1,26 @@
+Script modified; context reset.
+worker.js:12    It should contain 15 entries, each of which are:
+worker.js:13    NaN
+worker.js:17    --- Test start --- 
+worker.js:19    --- Testing log
+worker.js:20 NaN
+worker.js:22 NaN
+worker.js:24 NaN
+worker.js:19    --- Testing dirxml
+worker.js:20 NaN
+worker.js:22 NaN
+worker.js:24 NaN
+worker.js:19    --- Testing trace
+worker.js:20 NaN
+(anonymous) @ worker.js:20
+worker.js:22 NaN
+(anonymous) @ worker.js:22
+worker.js:24 NaN
+(anonymous) @ worker.js:24
+worker.js:19    --- Testing group
+worker.js:20 NaN
+worker.js:22 NaN
+worker.js:24 NaN
+worker.js:19    --- Testing groupCollapsed
+worker.js:20 NaN
+worker.js:24 NaN

@@ -1,0 +1,8 @@
+Uncaught (in response) ReferenceError: ShadowRealm is not defined
+Script modified; context reset.
+worker.js:2 ** Checking log in a new ShadowRealm
+worker.js:4    It should contain one entry saying "test passed".
+worker.js:6    --- Test start --- 
+worker.js:7 Uncaught ReferenceError: ShadowRealm is not defined
+    at worker.js:7:12
+(anonymous) @ worker.js:7

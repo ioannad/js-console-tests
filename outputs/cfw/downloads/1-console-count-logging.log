@@ -1,0 +1,13 @@
+Script modified; context reset.
+worker.js:2 ** Checking console.count
+worker.js:4    It should contain four entries whose contents are:
+worker.js:5    default: 1
+worker.js:6    default: 2
+worker.js:7    default: 3
+worker.js:8    default: 4
+worker.js:9    --- Test start --- 
+worker.js:10 default: 1
+worker.js:11 default: 2
+worker.js:12 default: 3
+worker.js:13 default: 4
+worker.js:14    --- Test end --- 

@@ -1,0 +1,44 @@
+Script modified; context reset.
+worker.js:2 ** Checking console timing methods
+worker.js:4    It should contain entries whose contents are:
+worker.js:5    default: <some time>
+worker.js:6    default: <some time>
+worker.js:8    default: <some time>
+worker.js:9    default: <some time> extra data
+worker.js:10    default: <some time>
+worker.js:12    default: <some time>
+worker.js:13    default: <some time> extra data
+worker.js:14    default: <some time>
+worker.js:16    default: <some time>
+worker.js:17    default: <some time> extra data
+worker.js:18    default: <some time>
+worker.js:20    custom toString(): <some time>
+worker.js:21    custom toString(): <some time> extra data
+worker.js:22    custom toString(): <some time>
+worker.js:24    a label: <some time>
+worker.js:25    a label: <some time> extra data
+worker.js:26    a label: <some time>
+worker.js:27    [some warning message indicating that a timer for label "b" does not exist]
+worker.js:29    --- Test start --- 
+worker.js:32 default: 0 ms
+worker.js:33 default: 0 ms
+worker.js:36 default: 0 ms
+worker.js:37 default: 0 ms extra data
+worker.js:38 default: 0 ms
+worker.js:41 default: 0 ms
+worker.js:42 default: 0 ms extra data
+worker.js:43 default: 0 ms
+worker.js:46 default: 0 ms
+worker.js:47 default: 0 ms extra data
+worker.js:48 default: 0 ms
+worker.js:51 custom toString(): 0 ms
+worker.js:52 custom toString(): 0 ms extra data
+worker.js:53 custom toString(): 0 ms
+worker.js:56 a label: 0 ms
+worker.js:57 a label: 0 ms extra data
+worker.js:58 a label: 0 ms
+worker.js:60 Timer 'b' does not exist
+(anonymous) @ worker.js:60
+worker.js:61 Timer 'b' does not exist
+(anonymous) @ worker.js:61
+worker.js:62    --- Test end --- 

@@ -1,0 +1,44 @@
+Assertion failed: Failed assertion logged. one two 3
+error
+warn
+Trace
+    at tracedbar (file://~/js-console-tests/output-check.js:60:15)
+    at tracedfoo (file://~/js-console-tests/output-check.js:62:5)
+    at test_console_methods_basic (file://~/js-console-tests/output-check.js:66:3)
+    at file://~/js-console-tests/output-check.js:232:1
+Assertion failed: robert keeps plaices on his balcony
+Assertion failed: robert keeps [object Object] on his balcony
+Timer 'default' already exists
+Timer 'default' does not exist
+[0m[1m[31merror[0m: Uncaught Error: The 'properties' argument must be of type Array. Received type string
+  console.table([[1, 2, 3, 4], [5, 6, 7, 8]], 2, 3);
+[0m[31m          ^[0m
+    at [0m[1m[3mconsole.table[0m ([0m[36mext:deno_console/01_console.js[0m:[0m[33m3324[0m:[0m[33m13[0m)
+    at [0m[1m[3mtest_console_table[0m ([0m[36mfile://~/js-console-tests/output-check.js[0m:[0m[33m143[0m:[0m[33m11[0m)
+    at [0m[36mfile://~/js-console-tests/output-check.js[0m:[0m[33m239[0m:[0m[33m1[0m
+Count for 'b' does not exist
+[0m[1m[31merror[0m: Uncaught ReferenceError: ShadowRealm is not defined
+const sr = new ShadowRealm();
+[0m[31m           ^[0m
+    at [0m[36mfile://~/js-console-tests/wpt4repl/console-log-shadowrealm-REPL-output.js[0m:[0m[33m10[0m:[0m[33m12[0m
+Timer 'b' does not exists
+Timer 'b' does not exist
+[0m[1m[31merror[0m: Uncaught ReferenceError: method is not defined
+for (method of methods) {
+[0m[31m     ^[0m
+    at [0m[36mfile://~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol-REPL-output.js[0m:[0m[33m14[0m:[0m[33m6[0m
+Trace: NaN
+    at file://~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol--deno-REPL-output.js:19:18
+Trace: NaN
+    at file://~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol--deno-REPL-output.js:21:18
+Trace: NaN
+    at file://~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol--deno-REPL-output.js:23:18
+Trace: NaN
+    at file://~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol--deno-REPL-output.js:31:18
+Trace: NaN
+    at file://~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol--deno-REPL-output.js:33:18
+Trace: NaN
+    at file://~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol--deno-REPL-output.js:35:18
+Trace: Symbol(description)
+    at file://~/js-console-tests/wpt4repl/console-string-format-specifier-symbol-REPL-output.js:13:9
+ $ --------- Output tests completed.

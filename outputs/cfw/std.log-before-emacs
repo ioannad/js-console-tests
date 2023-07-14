@@ -1,0 +1,400 @@
+ --- Adding downloads/0-output-check.log
+Script modified; context reset.
+worker.js:3 ------- Testing console methods for basic functionality -------
+worker.js:4 ------- Testing console methods for basic functionality -------
+test_console_methods_basic @ worker.js:4
+(anonymous) @ worker.js:256
+worker.js:7  --- console.assert(true, "should not be logged");
+worker.js:8  --- console.assert(true, "should not be logged");
+test_console_methods_basic @ worker.js:8
+(anonymous) @ worker.js:256
+​  --- console.assert(false, "Failed assertion logged.", "one", "two", 3);
+​  --- console.assert(false, "Failed assertion logged.", "one", "two", 3);
+test_console_methods_basic @ worker.js:12
+(anonymous) @ worker.js:256
+​ Assertion failed: Failed assertion logged. one two 3
+test_console_methods_basic @ worker.js:13
+(anonymous) @ worker.js:256
+​  --- console.assert(console.assert(true) == undefined);
+​  --- console.assert(console.assert(true) == undefined);
+test_console_methods_basic @ worker.js:16
+(anonymous) @ worker.js:256
+​  --- console.log("does this appear?");
+​  --- console.log("does this appear?");
+test_console_methods_basic @ worker.js:20
+(anonymous) @ worker.js:256
+​ does this appear?
+​  --- console.group("foo");
+​  --- console.group("foo");
+test_console_methods_basic @ worker.js:24
+(anonymous) @ worker.js:256
+​ foo
+​  --- console.log("should not appear");
+​  --- console.log("should not appear");
+test_console_methods_basic @ worker.js:28
+(anonymous) @ worker.js:256
+​ should not appear
+​  --- console.clear();
+​  --- console.clear();
+test_console_methods_basic @ worker.js:32
+(anonymous) @ worker.js:256
+​ console.clear() was prevented due to 'Preserve log'
+​  --- console.debug("debug");
+​  --- console.debug("debug");
+test_console_methods_basic @ worker.js:36
+(anonymous) @ worker.js:256
+​ debug
+​  --- console.error("error");
+​  --- console.error("error");
+test_console_methods_basic @ worker.js:40
+(anonymous) @ worker.js:256
+​ error
+test_console_methods_basic @ worker.js:41
+(anonymous) @ worker.js:256
+​  --- console.info("info");
+​  --- console.info("info");
+test_console_methods_basic @ worker.js:44
+(anonymous) @ worker.js:256
+​ info
+​  --- console.log("log");
+​  --- console.log("log");
+test_console_methods_basic @ worker.js:48
+(anonymous) @ worker.js:256
+​ log
+​  --- console.warn("warn");
+​  --- console.warn("warn");
+test_console_methods_basic @ worker.js:52
+(anonymous) @ worker.js:256
+​ warn
+test_console_methods_basic @ worker.js:53
+(anonymous) @ worker.js:256
+​  --- console.groupEnd();
+​  --- tracedfoo();
+​  --- tracedfoo();
+test_console_methods_basic @ worker.js:70
+(anonymous) @ worker.js:256
+​ console.trace
+tracedbar @ worker.js:64
+tracedfoo @ worker.js:66
+test_console_methods_basic @ worker.js:71
+(anonymous) @ worker.js:256
+​  --- console.dir(["dir", 2]);
+​  --- console.dir(["dir", 2]);
+test_console_methods_basic @ worker.js:74
+(anonymous) @ worker.js:256
+​ Array(2)
+​  --- console.dirxml([1,2], "default", null);
+​  --- console.dirxml([1,2], "default", null);
+test_console_methods_basic @ worker.js:79
+(anonymous) @ worker.js:256
+​ (2) [1, 2] 'default' null
+​  --- console.group("bar");
+​  --- console.group("bar");
+test_console_methods_basic @ worker.js:84
+(anonymous) @ worker.js:256
+​ bar
+​  --- console.groupCollapsed("baz");
+​  --- console.groupCollapsed("baz");
+test_console_methods_basic @ worker.js:88
+(anonymous) @ worker.js:256
+​ baz
+​  --- console.groupEnd();
+test_console_methods_basic @ worker.js:96
+(anonymous) @ worker.js:256
+​ ------- Testing formatter -------
+​ ------- Testing formatter -------
+test_formatter @ worker.js:105
+(anonymous) @ worker.js:258
+​  --- console.log("%f", 23);
+​  --- console.log("%f", 23);
+test_formatter @ worker.js:109
+(anonymous) @ worker.js:258
+​ 23
+​  --- console.log('bjoern and robert are born on the %fst dec', 1.234);
+​  --- console.log('bjoern and robert are born on the %fst dec', 1.234);
+test_formatter @ worker.js:113
+(anonymous) @ worker.js:258
+​ bjoern and robert are born on the 1.234st dec
+​  --- console.log("%f", null);
+​  --- console.log("%f", null);
+test_formatter @ worker.js:117
+(anonymous) @ worker.js:258
+​ NaN
+​  --- console.log("%d", null);
+​  --- console.log("%d", null);
+test_formatter @ worker.js:122
+(anonymous) @ worker.js:258
+​ NaN
+worker.js:126  --- console.log('bjoern and robert are born on the %dst dec', "foo");
+worker.js:127  --- console.log('bjoern and robert are born on the %dst dec', "foo");
+test_formatter @ worker.js:127
+(anonymous) @ worker.js:258
+worker.js:128 bjoern and robert are born on the NaNst dec
+worker.js:131  --- console.log("%s %snewword", "duck");
+worker.js:132  --- console.log("%s %snewword", "duck");
+test_formatter @ worker.js:132
+(anonymous) @ worker.js:258
+worker.js:133 duck %snewword
+worker.js:136  --- console.assert(false, "robert keeps %s on his balcony", "plaices");
+worker.js:137  --- console.assert(false, "robert keeps %s on his balcony", "plaices");
+test_formatter @ worker.js:137
+(anonymous) @ worker.js:258
+worker.js:138 Assertion failed: robert keeps plaices on his balcony
+test_formatter @ worker.js:138
+(anonymous) @ worker.js:258
+worker.js:141  --- console.assert(false, "robert keeps %s on his balcony", {foo: "bar"});
+worker.js:142  --- console.assert(false, "robert keeps %s on his balcony", {foo: "bar"});
+test_formatter @ worker.js:142
+(anonymous) @ worker.js:258
+worker.js:143 Assertion failed: robert keeps [object Object] on his balcony
+test_formatter @ worker.js:143
+(anonymous) @ worker.js:258
+worker.js:173 ------- Testing console.count -------
+worker.js:174 ------- Testing console.count -------
+test_console_count @ worker.js:174
+(anonymous) @ worker.js:259
+worker.js:178  --- console.count();
+worker.js:179 default: 1
+worker.js:181  --- console.countReset("default");
+worker.js:184  --- console.count("default");
+worker.js:185 default: 1
+worker.js:189  --- console.count('foo');
+worker.js:190 foo: 1
+worker.js:191  --- console.count('foo');
+worker.js:192 foo: 2
+worker.js:196  --- console.count({});
+worker.js:197 [object Object]: 1
+worker.js:199  --- console.count([]);
+worker.js:200 1
+worker.js:204  --- console.count();
+worker.js:205 default: 2
+worker.js:207  --- console.count("");
+worker.js:208 1
+worker.js:210  --- console.count(null);
+worker.js:211 null: 1
+worker.js:213  --- console.count(undefined);
+worker.js:214 default: 3
+worker.js:219 ------- Testing console.time -------
+worker.js:220 ------- Testing console.time -------
+test_console_timing @ worker.js:220
+(anonymous) @ worker.js:260
+worker.js:222  --- console.time();
+worker.js:225  --- console.time(undefined);
+worker.js:226 Timer 'default' already exists
+test_console_timing @ worker.js:226
+(anonymous) @ worker.js:260
+worker.js:228  --- console.time(null);
+worker.js:231 ------- Testing console.timeLog -------
+worker.js:233  --- console.timeLog();
+worker.js:234 default: 0 ms
+worker.js:236  --- console.timeLog(undefined);
+worker.js:237 default: 0 ms
+worker.js:239  --- console.timeLog(null);
+worker.js:240 null: 0 ms
+worker.js:242 ------- Testing console.timeEnd -------
+worker.js:244  --- console.timeEnd();
+worker.js:245 default: 0 ms
+worker.js:247  --- console.timeEnd(null);
+worker.js:248 null: 0 ms
+worker.js:250  --- console.timeEnd(undefined);
+worker.js:251 Timer 'default' does not exist
+test_console_timing @ worker.js:251
+(anonymous) @ worker.js:260
+worker.js:150 ------- Testing console.table -------
+worker.js:151 ------- Testing console.table -------
+test_console_table @ worker.js:151
+(anonymous) @ worker.js:263
+worker.js:154  --- console.table("the plaice living on the balcony");
+worker.js:155  --- console.table("the plaice living on the balcony");
+test_console_table @ worker.js:155
+(anonymous) @ worker.js:263
+worker.js:156 the plaice living on the balcony
+worker.js:159  --- console.table(new Set([{name: "terin", owner: false}, {name: "robert", owner: false}, {name: "domenic", owner: true}]));
+worker.js:160  --- console.table(new Set([{name: "terin", owner: false}, {name: "robert", owner: false}, {name: "domenic", owner: true}]));
+test_console_table @ worker.js:160
+(anonymous) @ worker.js:263
+worker.js:161 (index)Value(index)Valuesize3Set(3)
+worker.js:164  --- console.table([[1, 2, 3, 4], [5, 6, 7, 8]], 2, 3);
+worker.js:165  --- console.table([[1, 2, 3, 4], [5, 6, 7, 8]], 2, 3);
+test_console_table @ worker.js:165
+(anonymous) @ worker.js:263
+worker.js:167 (index)0123(index)01230123415678Array(2)
+worker.js:265 ---------------------------TEST END.
+ --- Adding downloads/1-console-count-logging.log
+Script modified; context reset.
+worker.js:2 ** Checking console.count
+worker.js:4    It should contain four entries whose contents are:
+worker.js:5    default: 1
+worker.js:6    default: 2
+worker.js:7    default: 3
+worker.js:8    default: 4
+worker.js:9    --- Test start --- 
+worker.js:10 default: 1
+worker.js:11 default: 2
+worker.js:12 default: 3
+worker.js:13 default: 4
+worker.js:14    --- Test end --- 
+ --- Adding downloads/2-console-countReset-logging.log
+Script modified; context reset.
+worker.js:2 ** Checking console.countReset
+worker.js:4    It should contain entries whose contents are:
+worker.js:5    default: 1
+worker.js:6    default: 1
+worker.js:7    default: 1
+worker.js:8    default: 1
+worker.js:9    default: 1
+worker.js:10    default: 1
+worker.js:11    default: 1
+worker.js:12    default: 1
+worker.js:13    a label: 1
+worker.js:14    a label: 1
+worker.js:15    [some warning message indicating that a count for label "b" does not exist]
+worker.js:16    --- Test start --- 
+worker.js:17 default: 1
+worker.js:19 default: 1
+worker.js:21 default: 2
+worker.js:23 default: 1
+worker.js:25 default: 2
+worker.js:27 default: 1
+worker.js:29 default: 2
+worker.js:31 default: 1
+worker.js:33 a label: 1
+worker.js:35 a label: 2
+worker.js:37 Count for 'b' does not exist
+(anonymous) @ worker.js:37
+worker.js:38    --- Test end --- 
+ --- Adding downloads/3-console-log-shadowrealm.log
+Uncaught (in response) ReferenceError: ShadowRealm is not defined
+Script modified; context reset.
+worker.js:2 ** Checking log in a new ShadowRealm
+worker.js:4    It should contain one entry saying "test passed".
+worker.js:6    --- Test start --- 
+worker.js:7 Uncaught ReferenceError: ShadowRealm is not defined
+    at worker.js:7:12
+(anonymous) @ worker.js:7
+ --- Adding downloads/4-console-timing-logging.log
+Script modified; context reset.
+worker.js:2 ** Checking console timing methods
+worker.js:4    It should contain entries whose contents are:
+worker.js:5    default: <some time>
+worker.js:6    default: <some time>
+worker.js:8    default: <some time>
+worker.js:9    default: <some time> extra data
+worker.js:10    default: <some time>
+worker.js:12    default: <some time>
+worker.js:13    default: <some time> extra data
+worker.js:14    default: <some time>
+worker.js:16    default: <some time>
+worker.js:17    default: <some time> extra data
+worker.js:18    default: <some time>
+worker.js:20    custom toString(): <some time>
+worker.js:21    custom toString(): <some time> extra data
+worker.js:22    custom toString(): <some time>
+worker.js:24    a label: <some time>
+worker.js:25    a label: <some time> extra data
+worker.js:26    a label: <some time>
+worker.js:27    [some warning message indicating that a timer for label "b" does not exist]
+worker.js:29    --- Test start --- 
+worker.js:32 default: 0 ms
+worker.js:33 default: 0 ms
+worker.js:36 default: 0 ms
+worker.js:37 default: 0 ms extra data
+worker.js:38 default: 0 ms
+worker.js:41 default: 0 ms
+worker.js:42 default: 0 ms extra data
+worker.js:43 default: 0 ms
+worker.js:46 default: 0 ms
+worker.js:47 default: 0 ms extra data
+worker.js:48 default: 0 ms
+worker.js:51 custom toString(): 0 ms
+worker.js:52 custom toString(): 0 ms extra data
+worker.js:53 custom toString(): 0 ms
+worker.js:56 a label: 0 ms
+worker.js:57 a label: 0 ms extra data
+worker.js:58 a label: 0 ms
+worker.js:60 Timer 'b' does not exist
+(anonymous) @ worker.js:60
+worker.js:61 Timer 'b' does not exist
+(anonymous) @ worker.js:61
+worker.js:62    --- Test end --- 
+ --- Adding downloads/5-console-number-format-specifiers-symbol.log
+Script modified; context reset.
+worker.js:2 ** Checking formatter and format specifiers
+worker.js:4    It should contain 15 entries, each of which are:
+worker.js:5    NaN
+worker.js:9    --- Test start --- 
+worker.js:11    --- Testing log
+worker.js:12 NaN
+worker.js:14 NaN
+worker.js:16 NaN
+worker.js:11    --- Testing dirxml
+worker.js:12 NaN
+worker.js:14 NaN
+worker.js:16 NaN
+worker.js:11    --- Testing trace
+worker.js:12 NaN
+(anonymous) @ worker.js:12
+worker.js:14 NaN
+(anonymous) @ worker.js:14
+worker.js:16 NaN
+(anonymous) @ worker.js:16
+worker.js:11    --- Testing group
+worker.js:12 NaN
+worker.js:14 NaN
+worker.js:16 NaN
+worker.js:11    --- Testing groupCollapsed
+worker.js:12 NaN
+ --- Adding downloads/6-console-number-format-specifiers-symbol--deno.log
+Script modified; context reset.
+​ ** Checking formatter and format specifiers
+​    It should contain 15 entries, each of which are:
+​    NaN
+​    --- Test start --- 
+​    --- Test using `for (let method ...)` --- 
+​ Testing log
+​ NaN
+​ NaN
+​ NaN
+​ Testing dirxml
+​ NaN
+​ NaN
+​ NaN
+​ Testing trace
+worker.js:14 NaN
+(anonymous) @ worker.js:14
+worker.js:16 NaN
+(anonymous) @ worker.js:16
+worker.js:18 NaN
+(anonymous) @ worker.js:18
+worker.js:13 Testing group
+worker.js:14 NaN
+worker.js:16 NaN
+worker.js:18 NaN
+worker.js:13 Testing groupCollapsed
+worker.js:14 NaN
+worker.js:26 NaN
+(anonymous) @ worker.js:26
+worker.js:28 NaN
+(anonymous) @ worker.js:28
+worker.js:30 NaN
+(anonymous) @ worker.js:30
+worker.js:25 Testing group
+worker.js:26 NaN
+worker.js:28 NaN
+worker.js:30 NaN
+worker.js:25 Testing groupCollapsed
+worker.js:26 NaN
+worker.js:30 NaN
+ --- Adding downloads/7-console-string-format-specifier-on-symbol.log
+Script modified; context reset.
+worker.js:5 ** Checking console string format specifier with Symbol
+worker.js:7    It should contain five entries, each of which are:
+worker.js:8    Symbol(description)
+worker.js:9    --- Test start --- 
+worker.js:10 Symbol(description)
+worker.js:11 Symbol(description)
+worker.js:12 Symbol(description)
+(anonymous) @ worker.js:12
+worker.js:13 Symbol(description)
+worker.js:15 Symbol(description)
+worker.js:17    --- Test end --- 

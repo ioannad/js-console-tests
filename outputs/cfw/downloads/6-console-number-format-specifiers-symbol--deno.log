@@ -1,0 +1,40 @@
+Script modified; context reset.
+​ ** Checking formatter and format specifiers
+​    It should contain 15 entries, each of which are:
+​    NaN
+​    --- Test start --- 
+​    --- Test using `for (let method ...)` --- 
+​ Testing log
+​ NaN
+​ NaN
+​ NaN
+​ Testing dirxml
+​ NaN
+​ NaN
+​ NaN
+​ Testing trace
+worker.js:14 NaN
+(anonymous) @ worker.js:14
+worker.js:16 NaN
+(anonymous) @ worker.js:16
+worker.js:18 NaN
+(anonymous) @ worker.js:18
+worker.js:13 Testing group
+worker.js:14 NaN
+worker.js:16 NaN
+worker.js:18 NaN
+worker.js:13 Testing groupCollapsed
+worker.js:14 NaN
+worker.js:26 NaN
+(anonymous) @ worker.js:26
+worker.js:28 NaN
+(anonymous) @ worker.js:28
+worker.js:30 NaN
+(anonymous) @ worker.js:30
+worker.js:25 Testing group
+worker.js:26 NaN
+worker.js:28 NaN
+worker.js:30 NaN
+worker.js:25 Testing groupCollapsed
+worker.js:26 NaN
+worker.js:30 NaN

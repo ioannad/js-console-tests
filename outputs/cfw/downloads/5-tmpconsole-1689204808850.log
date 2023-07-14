@@ -1,0 +1,40 @@
+Script modified; context reset.
+VM4 worker.js:10 ** Checking console.count
+VM4 worker.js:12    It should contain four entries whose contents are:
+VM4 worker.js:13    default: 1
+VM4 worker.js:14    default: 2
+VM4 worker.js:15    default: 3
+VM4 worker.js:16    default: 4
+VM4 worker.js:17    --- Test start --- 
+VM4 worker.js:18 default: 1
+VM4 worker.js:19 default: 2
+VM4 worker.js:20 default: 3
+VM4 worker.js:21 default: 4
+VM4 worker.js:22    --- Test end --- 
+Script modified; context reset.
+worker.js:11 ** Checking formatter and format specifiers
+worker.js:13    It should contain 15 entries, each of which are:
+worker.js:14    NaN
+worker.js:18    --- Test start --- 
+worker.js:20    --- Testing log
+worker.js:21 NaN
+worker.js:23 NaN
+worker.js:25 NaN
+worker.js:20    --- Testing dirxml
+worker.js:21 NaN
+worker.js:23 NaN
+worker.js:25 NaN
+worker.js:20    --- Testing trace
+worker.js:21 NaN
+(anonymous) @ worker.js:21
+worker.js:23 NaN
+(anonymous) @ worker.js:23
+worker.js:25 NaN
+(anonymous) @ worker.js:25
+worker.js:20    --- Testing group
+worker.js:21 NaN
+worker.js:23 NaN
+worker.js:25 NaN
+worker.js:20    --- Testing groupCollapsed
+worker.js:21 NaN
+worker.js:23 NaN

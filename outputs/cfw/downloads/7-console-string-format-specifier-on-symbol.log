@@ -1,0 +1,12 @@
+Script modified; context reset.
+worker.js:5 ** Checking console string format specifier with Symbol
+worker.js:7    It should contain five entries, each of which are:
+worker.js:8    Symbol(description)
+worker.js:9    --- Test start --- 
+worker.js:10 Symbol(description)
+worker.js:11 Symbol(description)
+worker.js:12 Symbol(description)
+(anonymous) @ worker.js:12
+worker.js:13 Symbol(description)
+worker.js:15 Symbol(description)
+worker.js:17    --- Test end --- 

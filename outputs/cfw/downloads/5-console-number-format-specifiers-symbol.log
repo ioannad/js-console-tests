@@ -1,0 +1,26 @@
+Script modified; context reset.
+worker.js:2 ** Checking formatter and format specifiers
+worker.js:4    It should contain 15 entries, each of which are:
+worker.js:5    NaN
+worker.js:9    --- Test start --- 
+worker.js:11    --- Testing log
+worker.js:12 NaN
+worker.js:14 NaN
+worker.js:16 NaN
+worker.js:11    --- Testing dirxml
+worker.js:12 NaN
+worker.js:14 NaN
+worker.js:16 NaN
+worker.js:11    --- Testing trace
+worker.js:12 NaN
+(anonymous) @ worker.js:12
+worker.js:14 NaN
+(anonymous) @ worker.js:14
+worker.js:16 NaN
+(anonymous) @ worker.js:16
+worker.js:11    --- Testing group
+worker.js:12 NaN
+worker.js:14 NaN
+worker.js:16 NaN
+worker.js:11    --- Testing groupCollapsed
+worker.js:12 NaN

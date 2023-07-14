@@ -1,0 +1,135 @@
+Assertion failed: Failed assertion logged. one two 3
+  error
+  warn
+Trace
+    at tracedbar (~/js-console-tests/output-check.js:60:15)
+    at tracedfoo (~/js-console-tests/output-check.js:62:5)
+    at test_console_methods_basic (~/js-console-tests/output-check.js:66:3)
+    at Object.<anonymous> (~/js-console-tests/output-check.js:232:1)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+Assertion failed: robert keeps plaices on his balcony
+Assertion failed: robert keeps { foo: 'bar' } on his balcony
+node:internal/validators:289
+    throw new ERR_INVALID_ARG_TYPE(name, 'Array', value);
+    ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "properties" argument must be an instance of Array. Received type number (2)
+    at console.table (node:internal/console/constructor:503:7)
+    at test_console_table (~/js-console-tests/output-check.js:143:11)
+    at Object.<anonymous> (~/js-console-tests/output-check.js:239:1)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+
+Node.js v20.3.0
+(node:184935) Warning: Count for 'default' does not exist
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:184935) Warning: Count for 'b' does not exist
+~/js-console-tests/wpt4repl/console-log-shadowrealm-REPL-output.js:10
+const sr = new ShadowRealm();
+           ^
+
+ReferenceError: ShadowRealm is not defined
+    at Object.<anonymous> (~/js-console-tests/wpt4repl/console-log-shadowrealm-REPL-output.js:10:12)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v20.3.0
+(node:184955) Warning: No such label 'b' for console.timeLog()
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:184955) Warning: No such label 'b' for console.timeEnd()
+Trace: NaN
+    at Object.<anonymous> (~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol-REPL-output.js:16:18)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+Trace: NaN
+    at Object.<anonymous> (~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol-REPL-output.js:18:18)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+Trace: NaN
+    at Object.<anonymous> (~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol-REPL-output.js:20:18)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+Trace: NaN
+    at Object.<anonymous> (~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol--deno-REPL-output.js:19:18)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+Trace: NaN
+    at Object.<anonymous> (~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol--deno-REPL-output.js:21:18)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+Trace: NaN
+    at Object.<anonymous> (~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol--deno-REPL-output.js:23:18)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+Trace: NaN
+    at Object.<anonymous> (~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol--deno-REPL-output.js:31:18)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+Trace: NaN
+    at Object.<anonymous> (~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol--deno-REPL-output.js:33:18)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+Trace: NaN
+    at Object.<anonymous> (~/js-console-tests/wpt4repl/console-number-format-specifiers-symbol--deno-REPL-output.js:35:18)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+Trace: Symbol(description)
+    at Object.<anonymous> (~/js-console-tests/wpt4repl/console-string-format-specifier-symbol-REPL-output.js:13:9)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+ $ --------- Output tests completed.

@@ -1,0 +1,28 @@
+Script modified; context reset.
+worker.js:2 ** Checking console.countReset
+worker.js:4    It should contain entries whose contents are:
+worker.js:5    default: 1
+worker.js:6    default: 1
+worker.js:7    default: 1
+worker.js:8    default: 1
+worker.js:9    default: 1
+worker.js:10    default: 1
+worker.js:11    default: 1
+worker.js:12    default: 1
+worker.js:13    a label: 1
+worker.js:14    a label: 1
+worker.js:15    [some warning message indicating that a count for label "b" does not exist]
+worker.js:16    --- Test start --- 
+worker.js:17 default: 1
+worker.js:19 default: 1
+worker.js:21 default: 2
+worker.js:23 default: 1
+worker.js:25 default: 2
+worker.js:27 default: 1
+worker.js:29 default: 2
+worker.js:31 default: 1
+worker.js:33 a label: 1
+worker.js:35 a label: 2
+worker.js:37 Count for 'b' does not exist
+(anonymous) @ worker.js:37
+worker.js:38    --- Test end --- 

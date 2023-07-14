@@ -1,0 +1,119 @@
+Script modified; context reset.
+worker.js:11 ------- Testing console methods for basic functionality -------
+worker.js:14  --- console.assert(true, "should not be logged");
+worker.js:17  --- console.assert(false, "Failed assertion logged.", "one", "two", 3);
+worker.js:18 Assertion failed: Failed assertion logged. one two 3
+test_console_methods_basic @ worker.js:18
+(anonymous) @ worker.js:229
+worker.js:20  --- console.assert(console.assert(true) == undefined);
+worker.js:23  --- console.log("does this appear?");
+worker.js:24 does this appear?
+worker.js:26  --- console.group("foo");
+worker.js:27 foo
+worker.js:29  --- console.log("should not appear");
+worker.js:30 should not appear
+worker.js:32  --- console.clear();
+worker.js:33 console.clear() was prevented due to 'Preserve log'
+worker.js:35  --- console.debug("debug");
+worker.js:36 debug
+worker.js:38  --- console.error("error");
+worker.js:39 error
+test_console_methods_basic @ worker.js:39
+(anonymous) @ worker.js:229
+worker.js:41  --- console.info("info");
+worker.js:42 info
+worker.js:44  --- console.log("log");
+worker.js:45 log
+worker.js:47  --- console.warn("warn");
+worker.js:48 warn
+test_console_methods_basic @ worker.js:48
+(anonymous) @ worker.js:229
+worker.js:54  --- console.groupEnd();
+worker.js:64  --- tracedfoo();
+worker.js:59 console.trace
+tracedbar @ worker.js:59
+tracedfoo @ worker.js:61
+test_console_methods_basic @ worker.js:65
+(anonymous) @ worker.js:229
+worker.js:67  --- console.dir(["dir", 2]);
+worker.js:68 Array(2)
+worker.js:71  --- console.dirxml([1,2], "default", null);
+worker.js:72 (2) [1, 2] 'default' null
+worker.js:75  --- console.group("bar");
+worker.js:76 bar
+worker.js:78  --- console.groupCollapsed("baz");
+worker.js:79 baz
+worker.js:92 ------- Testing formatter -------
+worker.js:95  --- console.log("%f", 23);
+worker.js:96 23
+worker.js:98  --- console.log('bjoern and robert are born on the %fst dec', 1.234);
+worker.js:99 bjoern and robert are born on the 1.234st dec
+worker.js:101  --- console.log("%f", null);
+worker.js:102 NaN
+worker.js:105  --- console.log("%d", null);
+worker.js:106 NaN
+worker.js:109  --- console.log('bjoern and robert are born on the %dst dec', "foo");
+worker.js:110 bjoern and robert are born on the NaNst dec
+worker.js:113  --- console.log("%s %snewword", "duck");
+worker.js:114 duck %snewword
+worker.js:117  --- console.assert(false, "robert keeps %s on his balcony", "plaices");
+worker.js:118 Assertion failed: robert keeps plaices on his balcony
+test_formatter @ worker.js:118
+(anonymous) @ worker.js:231
+worker.js:121  --- console.assert(false, "robert keeps %s on his balcony", {foo: "bar"});
+worker.js:122 Assertion failed: robert keeps [object Object] on his balcony
+test_formatter @ worker.js:122
+(anonymous) @ worker.js:231
+worker.js:148 ------- Testing console.count -------
+worker.js:152  --- console.count();
+worker.js:153 default: 1
+worker.js:155  --- console.countReset("default");
+worker.js:158  --- console.count("default");
+worker.js:159 default: 1
+worker.js:163  --- console.count('foo');
+worker.js:164 foo: 1
+worker.js:165  --- console.count('foo');
+worker.js:166 foo: 2
+worker.js:170  --- console.count({});
+worker.js:171 [object Object]: 1
+worker.js:173  --- console.count([]);
+worker.js:174 1
+worker.js:178  --- console.count();
+worker.js:179 default: 2
+worker.js:181  --- console.count("");
+worker.js:182 1
+worker.js:184  --- console.count(null);
+worker.js:185 null: 1
+worker.js:187  --- console.count(undefined);
+worker.js:188 default: 3
+worker.js:193 ------- Testing console.time -------
+worker.js:195  --- console.time();
+worker.js:198  --- console.time(undefined);
+worker.js:199 Timer 'default' already exists
+test_console_timing @ worker.js:199
+(anonymous) @ worker.js:233
+worker.js:201  --- console.time(null);
+worker.js:204 ------- Testing console.timeLog -------
+worker.js:206  --- console.timeLog();
+worker.js:207 default: 0 ms
+worker.js:209  --- console.timeLog(undefined);
+worker.js:210 default: 0 ms
+worker.js:212  --- console.timeLog(null);
+worker.js:213 null: 0 ms
+worker.js:215 ------- Testing console.timeEnd -------
+worker.js:217  --- console.timeEnd();
+worker.js:218 default: 0 ms
+worker.js:220  --- console.timeEnd(null);
+worker.js:221 null: 0 ms
+worker.js:223  --- console.timeEnd(undefined);
+worker.js:224 Timer 'default' does not exist
+test_console_timing @ worker.js:224
+(anonymous) @ worker.js:233
+worker.js:129 ------- Testing console.table -------
+worker.js:132  --- console.table("the plaice living on the balcony");
+worker.js:133 the plaice living on the balcony
+worker.js:136  --- console.table(new Set([{name: "terin", owner: false}, {name: "robert", owner: false}, {name: "domenic", owner: true}]));
+worker.js:137 (index)Value(index)Valuesize3Set(3)
+worker.js:140  --- console.table([[1, 2, 3, 4], [5, 6, 7, 8]], 2, 3);
+worker.js:142 (index)0123(index)01230123415678Array(2)
+worker.js:238 ---------------------------TEST END.
